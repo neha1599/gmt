@@ -1,0 +1,35 @@
+Salt local setup
+
+1. Go to https://licensing.toolkits.industrysoftware.automation.siemens.com/sws/#licenses:main
+2.  Get Licenses--->>Click on Internal Licenses as highlighted below
+3. put all the fields use hostname as : Go to command prompt--->>enter hostname enter | user host ID as---->> Go to command prompt --->>enter ipconfig -all enter---->> use ethernet physical address as host ID
+4.click on generate , after that click on Download
+5. Get Downloads--->>windows-->>download--->>install
+6. go polarion properties change this com.siemens.polarion.license.salt.server=29000@ip4 address
+
+
+DINACQNLW74
+
+AC:B4:80:DC:A2:09
+
+com.siemens.polarion.license.salt.server=29000@ip4 address
+put add ip4 address in polarion propertied
+
+Server: https://debian12-nehbabsq-18915.polarion.net.plm.eds.com/polarion
+Build: : 3.26.6.20260213-0333-master-f128bd0a
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Salt : com.siemens.polarion.license.salt.server=29000@czprglcsv6s004.net.plm.eds.com;29000@di2iesnn0375wv0.net.plm.eds.com
+
+-------------------------------------------------------------------------------------------------------------------------------
+for license user file add following properties into polarion properties
+
+#locking of user
+change.users.license.lock.durationSecs=30
+ 
+#to enable users file in license management
+com.siemens.polarion.license.showUserFileEditor=true
+
+--------------------------------------------
