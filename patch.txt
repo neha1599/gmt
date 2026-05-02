@@ -1,0 +1,15 @@
+patch
+20429---redhat
+
+
+
+com.siemens.polarion.entitlement.ecaId=500127772
+com.siemens.polarion.license.salt.cloudUrl=https://cloud-licensing.preprod.cls.bas.sws.siemens.com
+#com.siemens.polarion.license.salt.server=29000@czprglcsv6s004.net.plm.eds.com;29000@di2iesnn0375wv0.net.plm.eds.com
+com.siemens.polarion.license.salt.enabled=false
+
+
+4939---2410
+4934--blank----build: 3.25.12.20260322-1815-2512.2603-181f8b4b
+4935-2512---build: 3.25.12.20251128-1344-2512-f85ab45a----3.25.12.20260322-1815-2512.2603-181f8b4b
+4936-2512.2602
