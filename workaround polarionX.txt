@@ -1,0 +1,49 @@
+com.siemens.polarion.entitlement.ecaId=500127772
+com.siemens.polarion.license.salt.cloudUrl=https://cloud-licensing.preprod.cls.bas.sws.siemens.com
+#com.siemens.polarion.license.salt.server=29000@czprglcsv6s004.net.plm.eds.com;29000@di2iesnn0375wv0.net.plm.eds.com
+com.siemens.polarion.license.salt.enabled=false
+
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<authentication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://polarion.com/PolarionAuthentication"
+xsi:schemaLocation="http://polarion.com/PolarionAuthentication http://localhost:8888/polarion/authentication.xsd">
+<password default="true"/>
+<oauth2 id="SAMAUTH_SSO">
+<authorizeUrl>https://samauth.us-east-1.preprod.teamcenterwebservices.com/auth</authorizeUrl>
+<tokenUrl>https://samauth.us-east-1.preprod.teamcenterwebservices.com/token</tokenUrl>
+<clientId>A8sKNLKmC9ddYLWi8hzvd</clientId>
+<clientSecret>NqSPMDLx4N6iIgryx8AUDgyL4P3y-Z5qJs3bbPz8_ll3EalI1L6zAiZMfSWhK_0WsfW8C3I_27BnZXOLNJgPHw</clientSecret>
+<replaceForbiddenCharacters>true</replaceForbiddenCharacters>
+<responseParser>jsonpath</responseParser>
+<traceSsoResponses>true</traceSsoResponses>
+<mapping>
+<id>$['sws.samauth.ten.user']</id>
+<name>$.concat($.given_name," ",$.family_name)</name>
+<email>email</email>
+<description>$</description>
+</mapping>
+<scopes>
+<scope>openid sam_account profile samauth.grp samauth.ten samauth.tiers licensesrv:read:license</scope>
+</scopes>
+<autocreate>
+<enabled>true</enabled>
+<globalRoles>
+<role>user</role>
+</globalRoles>
+</autocreate>
+<groupsSynchronization>
+<enabled>true</enabled>
+<groupsMapping>
+<namePath>$['sws.samauth.grp.names']</namePath>
+</groupsMapping>
+</groupsSynchronization>
+<view>
+<text>SAM Login</text>
+</view>
+</oauth2>
+</authentication>
+
+
+
+
+
