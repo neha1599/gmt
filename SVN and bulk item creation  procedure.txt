@@ -1,0 +1,56 @@
+SVN
+
+download Tortoise SVN and install 
+Go to c drive and right click and select repo browser
+put browser link as :https://debian12-nehbabsq-18322.polarion.net.plm.eds.com/repo/ and click on ok
+use username and password as admin, admin
+then select project, Wi
+-------------------------------------------------------------------------------------------------------------
+
+when on loading is disable then mouse hover on linked work item then it not showing revision parameter in head mode
+when on loading is diseable then mouse hover on linked work item then it has revision parameter in specific revision mode
+
+
+when on loading is enabled then then mouse hover on linked work item then it not  revision parameter in specific revision mode and that specific document revision number not a WI revision number
+
+----------------------------------------------------------------------------------------------------------------------------
+create multiple WI through scripts
+
+login in Wincp
+create a folder as scripts in opt/polarion
+then create a  file as CollectionGenerator.groovy and add groovy code according what we have to create
+
+Go to global administration>>Scheduler>>add code/job as below and save
+------
+for new doc creation code
+------
+ <job cronExpression="0 5 8 ? * MON" disabled="true" id="script.job" name="CollectionGenerator" scope="system">
+   <scriptName>CollectionGenerator.groovy</scriptName>
+   <scriptEngine>groovy</scriptEngine>
+    <properties>
+        <projectId>qaw</projectId>
+       <documentId>livdoc1</documentId>
+        <wiNumber>198</wiNumber>
+    </properties>
+</job>
+
+------
+for existing doc  WI creation code
+------
+
+ <job id="script.job" name="Bulk create WI in existing document" scope="project:ProjectNB">
+    <scriptName>CollectionGenerator.groovy</scriptName>
+    <scriptEngine>groovy</scriptEngine>
+    <properties>
+        <projectId>ProjectNB</projectId>
+        <spaceId>_default</spaceId>
+        <documentId>livdoc1</documentId>
+        <wiType>task</wiType>
+        <wiNumber>198</wiNumber>
+        <testStepNumber/>
+    </properties>
+</job>
+
+Monitor>>Script name>> execute
+--------------------------------------------------------
+
