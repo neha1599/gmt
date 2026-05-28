@@ -1,0 +1,11 @@
+keycloak setup 
+
+https://cns.net.plm.eds.com/polarion/#/project/KnowledgeBase/wiki/Authentication/Keycloak%20_SAML_%20OAuth2%20provider_%20guide
+
+LDAP setup: https://cns.net.plm.eds.com/polarion/#/project/KnowledgeBase/wiki/Authentication/Setup%20LDAP%20_%20combine%20with%20other%20authentication?revision=2619763
+
+
+Door setup:
+* Did DOORS Local Installation setup by following Doors Knowledge 
+* Followed the steps Prerequisites for the import procedure from Configure Connectors overview 
+
