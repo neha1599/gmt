@@ -1,0 +1,13 @@
+2512 -> release
+2512.2601 -> patch
+ 
+2512 ->2512.2601 ---> minor update
+ 
+Major update
+2506 > 2512.2601
+2506.1 -> 2512. 2601
+
+2506--java17
+
+
+PLGL-US-Y1DzuRH5djZrjXSfAwcW
